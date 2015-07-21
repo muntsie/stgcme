@@ -1,0 +1,359 @@
+/* code content section (CCS)
+reset
+html
+p element first letter
+sky
+desert
+logo
+header
+content
+nav
+  a
+  register
+  agenda
+headline
+tagline
+conf-date
+sponsors
+attention
+aka
+bottom-nav
+footer
+media queries
+*/
+
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* begin styling */
+html {
+	background:#000000;
+	font-family:Verdana, Geneva, sans-serif;
+}
+p::first-letter {
+  color:#822D1A;
+  font-size:1.5em; 
+  font-weight:bold;
+}
+div#sky {
+	background:#76A9DB;
+	height:300px;
+	width:100%;
+}
+div#desert {
+	background:#822D1A;
+	height:600px;
+	width:100%;
+}
+div#logo img {
+	left:200px;
+	position:absolute;
+	top:76px;
+	z-index:200;
+}
+header {
+	color:#ffffff;
+	font-size:2em;
+	height:auto;
+	margin:0 auto;
+	position:absolute;
+	text-align:center;
+	top:20px;
+	width:100%;
+}
+div#content {
+	background:#ffffff;
+	height:auto;
+	margin:0 5% 0 5%;
+	position:absolute;
+	top:100px;
+	width:90%;	
+	z-index: 100;
+}
+nav{
+	background:#ffffff; 
+	margin:0 auto;
+	padding:20px; /* adds some space between the menu buttons and the dates */
+	text-align:center;
+}
+nav a {
+	background:#822D1A;
+	border-color:#ffffff;
+	border-style:solid;
+	color:#ffffff;
+	display:inline;
+	font-size:1.75em;
+	height:auto;
+	padding:0 5px;
+	text-decoration:none;
+	width:auto;
+}
+nav a:hover {
+	background:#76A9DB;
+	color:#822D1A;
+}
+.register{
+ 	background:#fdcd07;
+ 	color:#822D1A;
+ 	font-size:1.75em;
+ 	height:auto;
+ 	padding:0 5px;
+ 	text-decoration:none;
+ 	width:auto;  
+}
+.register:hover{
+ 	background:#76A9DB;
+ 	color:#ffffff;
+}
+.agenda {
+ 	background:#76A9DB;
+ 	color:#822D1A;
+ 	font-size:1.75em;
+ 	height:auto;
+ 	padding:0 5px;
+ 	text-decoration:none;
+ 	width:auto; 
+}
+.agenda:hover {
+ 	background:#fdcd07;
+ 	color:#ffffff;
+}
+div#headline {
+	margin:0 auto;
+	padding:20px auto;
+	text-align:center;
+	width:100%;
+}
+div#headline img {
+	margin-right:10px;
+}
+div#tagline {
+	color:#822D1A;
+	font-size:2em;
+	margin:0 auto;
+	padding:20px 0 10px 0;
+	text-align:center;
+	width:100%;
+	z-index:101;
+}
+div#conf-date {
+	color:#000000;
+	font-size:1em;
+	margin:0 auto;
+	padding:1px 0 20px 0;
+	text-align:center;
+	width:100%;
+	z-index:101;
+}
+div#sponsors {
+	padding:20px 0 20px 0;	
+	text-align:center;
+	width:100%;
+}
+div#attention {
+	padding:20px 0 20px 0;	
+	text-align:center;
+	width:100%;
+}
+div#aka {
+	padding:20px 0 20px 0;	
+	text-align:center;
+	width:100%;
+}
+div#bottom-nav {
+	margin:0 auto;
+	width:100%;
+}
+footer {
+	background:#ffffff;
+	color:#000000;
+	padding:10px 0 10px 0;	
+	text-align:center;
+	width:100%;
+}
+
+/* media queries */
+/* iphone 5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+
+div#sky {
+	background:#76A9DB;
+	height:250px;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+div#desert {
+	background:#822D1A;
+	height:1500px;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+header {
+	background:#76A9DB;
+	color:#ffffff;
+	font-size:2em;
+	height:50px;
+	margin:0;
+	padding:0;
+	position:absolute;
+	text-align:center;
+	top:10px;
+	width:100%;
+	z-index:100;
+}
+div#logo img {
+	background:#78FC06;
+    left:40%;
+    position:absolute;
+    top:125px;
+	text-align:center;
+	z-index: 200;
+}
+div#logo img {
+	z-index:200;
+}
+nav {
+	background:#ffffff; 
+	display:block;
+	margin:0 auto;
+	padding:20px; // adds some space between the menu buttons and the dates
+	text-align:center;
+	top:50;
+}
+nav a {
+	background:#822D1A;
+	border-color:#ffffff;
+	border-style:solid;
+	color:#ffffff;
+	display:block;
+	font-size:2.5em;
+	height:auto;
+	padding:15px 2.5px;
+	text-decoration:none;
+	width:auto;
+}
+nav a:hover {
+	background:#76A9DB;
+	color:#822D1A;
+}
+.register{
+ 	background:#fdcd07;
+ 	color:#822D1A;
+ 	font-size:2.5em;
+ 	height:auto;
+ 	padding:15px 2.5px;
+ 	text-decoration:none;
+ 	width:auto;  
+}
+.register:hover{
+ 	background:#76A9DB;
+ 	color:#ffffff;
+}
+.agenda {
+ 	background:#76A9DB;
+ 	color:#822D1A;
+ 	font-size:2.5em;
+ 	height:auto;
+ 	padding:15px 2.5px;
+ 	text-decoration:none;
+ 	width:auto; 
+}
+.agenda:hover {
+ 	background:#822D1A;
+ 	color:#ffffff;
+}
+div#headline img {
+	display:block;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	text-align: center;
+}
+#img1 {
+    background:#5AA16C;
+    float:left;
+    height:100px;
+    width:100px;
+}
+#img2 {
+    background:#4C5CA1;
+    float:left;
+    height:100px;
+    width:100px;    
+}
+#img3 {
+    background:#A11800;
+    clear:left;
+    float:left;
+    height:100px;
+    width:100px;  
+}
+#img4 {
+    background:#A1852B;
+    float:left;    
+    height:100px;
+    width:100px;
+}
+div#content {
+	background:#ffffff;
+	height:auto;
+	position:absolute;
+	top:200px;
+	width:90%;	
+	z-index:100;
+}
+footer {
+	background:#ffffff;
+	color:#000000;
+	margin:0 auto;
+	padding:10px 0 10px 0;	
+	position:relative;
+	text-align:center;
+	top:40px;
+	width:90%;
+	z-index: 501;
+}
+ }
