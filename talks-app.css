@@ -1,0 +1,12 @@
+/* css */
+#logo { 
+  max-width: 100%;
+  position:relative;
+  margin:0 auto;
+  height:auto;
+  text-align:center; 
+  background:#7baabe; 
+}
+.results{
+  padding:0 5px;
+}

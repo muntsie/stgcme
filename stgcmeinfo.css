@@ -68,9 +68,11 @@ table {
 }
 
 /* begin styling */
-html {
-	background:#000000;
+html, body {
+	background:#822D1A;
 	font-family:Verdana, Geneva, sans-serif;
+	height:100%;
+	width:100%;
 }
 p::first-letter {
   color:#822D1A;
@@ -113,10 +115,152 @@ div#content {
 	background:#ffffff;
 	height:auto;
 	margin:0 5% 0 5%;
+	padding:0 5% 0 5%;
 	position:absolute;
 	top:100px;
-	width:90%;	
+	width:80%;	
 	z-index: 100;
+}
+div#about{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 16.6%;
+    width: auto;
+}
+div#who{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 24%;
+    width: auto;
+}
+div#partners{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 31.4%;
+    width: auto;
+}
+div#syllabi{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 38.8%;
+    width: auto;
+}
+div#directions{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 46.2%;
+    width: auto;
+}
+div#transportation{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 53.6%;
+    width: auto;
+}
+div#lodging{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 60%;
+    width: auto;
+}
+div#format{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 68.4%;
+    width: auto;
+}
+div#accreditation{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 75.8%;
+    width: auto;
+}
+div#fees{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 83.2%;
+    width: auto;
+}
+div#vendors{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 90.6%;
+    width: auto;
+}
+div#policies{
+    bottom: 0;
+    left: 0;
+	min-height: 100vh; 
+    position:relative;
+    right: 0;
+    top: 99.0%;
+    width: auto;
+}
+p.faqsections{
+	font-weight: bold;
+	font-size:1em;
+}
+a.faqlinks{
+	background:#76A9DB;
+	color:#822D1A;
+	line-height:160%;
+}
+a.faqlinks:hover{
+	background:#822D1A;
+	color:#76A9DB;
+	line-height:160%;
+}
+div a.returnToTop{
+	background:#822D1A;
+	border-color:#ffffff;
+	border-radius: 15px;
+	border-style:solid;
+	color:#ffffff;
+	display:inline;
+	font-size:1.75em;
+	height:auto;
+	line-height: 175%;
+	padding:5px 5px;
+	text-align: center;
+	text-decoration:none;
+	width:auto;
+}
+div a.returnToTop:hover{
+	background:#76A9DB;
+	color:#822D1A;
 }
 nav{
 	background:#ffffff; 
@@ -166,13 +310,13 @@ nav a:hover {
  	background:#fdcd07;
  	color:#ffffff;
 }
-.faqnav{
+#faqnav{
 	background:#ffffff;
 	margin:0 auto;
 	padding:20px; /* adds some space between the menu buttons and the dates */
 	text-align:center;
 }
-.faqnav a {
+#faqnav a {
 	background:#822D1A;
 	border-color:#ffffff;
 	border-radius: 15px;
@@ -182,11 +326,11 @@ nav a:hover {
 	font-size:1.75em;
 	height:auto;
 	line-height: 175%;
-	padding:0 5px 0 5px;
+	padding:5px 5px;
 	text-decoration:none;
 	width:auto;
 }
-.faqnav a:hover {
+#faqnav a:hover {
 	background:#76A9DB;
 	color:#822D1A;
 }
@@ -217,55 +361,7 @@ div#conf-date {
 	width:100%;
 	z-index:101;
 }
-div#sponsors {
-	padding:20px 0 20px 0;	
-	text-align:center;
-	width:100%;
-}
-div#attention {
-	padding:20px 0 20px 0;	
-	text-align:center;
-	width:100%;
-}
-div#aka {
-	padding:20px 0 20px 0;	
-	text-align:center;
-	width:100%;
-}
-div#attractions{
-	text-align: center;
-}
-h2#explore{
-	color:#76A9DB;
-	font-size:1.75em;
-	margin:0 auto;
-	padding:20px 0 10px 0;
-	text-align:center;
-	width:100%;
-	z-index:101;
-}
-.enjoy {
- 	background:#822D1A;
- 	color:#76A9DB;
- 	font-size:1.75em;
- 	height:auto;
- 	padding:0 5px;
- 	text-decoration:none;
- 	width:auto; 
-}
-.enjoy:hover {
- 	background:#76A9DB;
- 	color:#822D1A;
-}
-ul#nav li {
-	display:inline;
-}
 div#payvendorfee {
-	padding:20px 0 20px 0;	
-	text-align:center;
-	width:100%;
-}
-div#vendors {
 	padding:20px 0 20px 0;	
 	text-align:center;
 	width:100%;
@@ -274,7 +370,7 @@ div#faqcontent {
 	background:#010101;
 	height:25000px;
 	margin:0 10% 0 10%;
-	position:absolute;
+	position:relative;
 	top:100px;
 	width:80%;	
 	z-index: 100;
@@ -316,7 +412,7 @@ header {
 	height:50px;
 	margin:0;
 	padding:0;
-	position:absolute;
+	position:relative;
 	text-align:center;
 	top:10px;
 	width:100%;
@@ -325,7 +421,7 @@ header {
 div#logo img {
 	background:#78FC06;
     left:40%;
-    position:absolute;
+    position:relative;
     top:125px;
 	text-align:center;
 	z-index: 200;
@@ -367,19 +463,6 @@ nav a:hover {
  	width:auto;  
 }
 .register:hover{
- 	background:#76A9DB;
- 	color:#ffffff;
-}
-.enjoy{
- 	background:#fdcd07;
- 	color:#822D1A;
- 	font-size:2.5em;
- 	height:auto;
- 	padding:15px 2.5px;
- 	text-decoration:none;
- 	width:auto;  
-}
-.enjoy:hover{
  	background:#76A9DB;
  	color:#ffffff;
 }
@@ -430,7 +513,7 @@ div#headline img {
 div#content {
 	background:#ffffff;
 	height:auto;
-	position:absolute;
+	position:relative;
 	top:200px;
 	width:90%;	
 	z-index:100;
